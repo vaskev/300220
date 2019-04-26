@@ -19,10 +19,12 @@ dataRaw = pd.read_csv('/home/vaske/to_backup/300220/Datoja/data.txt', delimiter=
 dataRaw_arr = dataRaw.iloc[0:557,0:2].values
 
 dataRaw_pandas=pd.DataFrame(dataRaw_arr)
-
 dataRaw_pandas.to_csv('/home/vaske/to_backup/300220/Datoja/data_from_calc.txt', sep=';')
 
-plt.plot(dataRaw_arr)
+freq =dataRaw_arr[:,0]
+values=dataRaw_arr[:,1]
+
+plt.plot(freq,values)
 plt.show()
 
 print('DONE')
