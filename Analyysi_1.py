@@ -40,7 +40,7 @@ print('Value = '+str(value_r))
 raami = plt.figure()
 kuvaaja = raami.add_subplot(1,1,1)
 kuvaaja.plot(freq,values)
-teksti = str(freq_r)+"MHz,"+str(value_r)
+teksti = str(freq_r)+"MHz ,"+str(value_r)
 kuvaaja.annotate(teksti,
                  xy=(pointer_f,pointer_v  ),
                  xytext = (pointer_f +5 ,pointer_v +5),
